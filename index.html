@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="container">
+
+                <nav>
+                    <a href="#briefDesctiption">
+
+                        <span>Me</span>
+                    </a>
+                    <a href="#contacts">
+
+                        <span>Contacts</span>
+                    </a>
+                    <a href="#skills">
+
+                        <span>Skills</span>
+                    </a>
+                </nav>
+
+                <span class="logo">RS SCHOOL</span>
+
+                <nav>
+                    <a href="#experience">
+
+                        <span>Experience</span>
+                    </a>
+                    <a href="#education">
+
+                        <span>Education</span>
+                    </a>
+                    <a href="#english">
+
+                        <span>English</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <div class="textBlock">
+
+                        <div class="hello">Hello!</div>
+                        <h1>I'm <b>Ainazik Ishenbek</b>,<br />Web Developer</h1>
+                    </div>
+                    <div class="avatar">
+                        <img src="./assets/avatar.jpg" alt="cv avatar image">
+                        <div class="exp">1 year of experience</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts">
+                <div class="container">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/zik30" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="mailto:ainazik.ishenbek@gmail.com" target="_blank">Email</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ainazik-ishenbek-71ab0a1b1/"
+                                target="_blank">LinkendIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="briefDesctiption">
+                <div class="container">
+                    <h2>About <span class="orangeText">Me</span></h2>
+                    <p>I am a Junior Frontend Developer and a second-year Computer Engineering student at Manas
+                        University. My
+                        primary focus is building clean, scalable, and user-friendly web applications. I have around one
+                        year of hands-on experience through internships and practical projects, where I collaborated
+                        with teams, worked on real features, and improved application usability and structure. My goal
+                        is to grow into a strong software engineer by working on real-world systems, taking ownership of
+                        tasks, and learning from experienced developers. I am highly motivated, disciplined, and
+                        committed to improving every day.</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <h2><span class="orangeText">My</span> Skills</h2>
+                    <div class="skillCards">
+                        <div class="skillCard">
+                            <h3>
+                                HTML5
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                CSS3
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                JS ES6+
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                REACT
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                GIT
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                ZUSTAND
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                VITE
+                            </h3>
+                        </div>
+                        <div class="skillCard">
+                            <h3>
+                                PYTHON
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="code">
+                <div class="container">
+                    <h2><span class="orangeText">Code</span> Examples</h2>
+                    <div class="example">
+                        <div class="name">
+                            <h3>Valid Parentheses
+                            </h3>
+                            <p>You are given a string s consisting of the following characters: '(', ')', '{', '}', '['
+                                and ']'.
+
+                                The input string s is valid if and only if:
+
+                                Every open bracket is closed by the same type of close bracket.
+                                Open brackets are closed in the correct order.
+                                Every close bracket has a corresponding open bracket of the same type.
+                                Return true if s is a valid string, and false otherwise.</p>
+                        </div>
+                        <div class="solution">
+                            <pre>
+class Solution {
+public:
+    bool isValid(string s) {
+        stack&lt;\char&gt; st;
+        
+        for(char br : s){
+
+            if (br == '(' || br == '{' || br == '[') {
+                st.push(br);
+                continue;
+            }
+
+            if (st.empty()) return false;
+
+            if(br == ')' && st.top() == '(' ){
+                    st.pop();
+                    continue;
+            }
+            if(br == '}' && st.top() == '{'){
+                    st.pop();
+                    continue;
+            }
+            if(br == ']' && st.top() == '['){
+                    st.pop();
+                    continue;
+            }
+            return false;
+        }
+        return st.empty();
+    }
+};
+
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <div class="container">
+                    <h2>My <span class="orangeText">
+                            Work Experience
+                        </span>
+                    </h2>
+                    <div class="work">
+                        <div class="workName">
+
+                            <h3>GeeksPRO</h3>
+                            <span>Bishkek, KG <br /> June 2025 – Present</span>
+                        </div>
+                        <div class="workDesc">
+                            <h3>Frontend Intern / Junior Developer</h3>
+                            <ul>
+                                <li>Developed and maintained React-based interfaces</li>
+                                <li>Collaborated with backend developers to integrate APIs</li>
+                                <li>Participated in weekly code reviews</li>
+                                <li>Improved UI usability and component structure</li>
+                                <li>Contributed to implementing accessibility features</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <div class="container">
+                    <h2>My <span class="orangeText">
+                            Education
+                        </span>
+                    </h2>
+                    <div class="ed">
+                        <div class="edName">
+
+                            <h3>Manas University</h3>
+
+                            <span> Bishkek, KG <br /> Sept 2024 – Present</span>
+                        </div>
+                        <div class="edDesc">
+                            <h3>BS in Computer Engineering</h3>
+                            <ul>
+                                <li><b>GPA</b>: 3.6/4.0</li>
+                                <li><b>Coursework:</b>Data structure/Algorithms, Programming Language Principles,
+                                    Software Engineering, Full stack
+                                    Developing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="english">
+                <div class="container">
+                    <h2><span class="orangeText">English</span> Language Proficiency</h2>
+                    <h3>English proficiency: Advanced (C1).</h3>
+                    <p>I studied at an American high school in North Carolina as part of the FLEX exchange program,
+                        where I significantly improved my English skills and gained experience communicating and
+                        studying in an international environment. I am comfortable participating in technical
+                        discussions, writing documentation, and collaborating with English-speaking teams.
+                        My IELTS score is <span class="orangeAText">7.5</span> .
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="top">
+
+                    <div class="logo">
+                        <a href="">
+                            <img src="./assets/rs-school-logo.svg" alt="rs school logo">
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="">My GITHUB</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                made in 2026
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
